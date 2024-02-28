@@ -44,9 +44,8 @@ jobs:
           component_definition_name: ${{ github.event.inputs.output }}
           component_title: ${{ github.event.inputs.component_name }}
           component_description: ${{ github.event.inputs.component_description }}
-          file_pattern: "*.json,rules/*,markdown/*"
           branch: component-create-${{ github.run_id }}
-          target_branch: "develop"
+          target_branch: "main"
           commit_message: "adds ${{ github.event.inputs.component_name }} component to ${{ github.event.inputs.output }} component definition [skip ci]"
           pull_request_title: "Add ${{ github.event.inputs.component_name }} component to ${{ github.event.inputs.output }} component definition"
           github_token: ${{ steps.get_installation_token.outputs.token }}
