@@ -1,0 +1,53 @@
+name: Create a new component definition
+on:
+  workflow_dispatch:
+   inputs:
+      import_name:
+        required: true
+        description: Name of profile in trestle workspace to be imported into the component definition
+      output:
+        required: true
+        description: Name of the component definition to create
+      component_name:
+        required: true
+        description: Name of the component in the generated component definition
+      component_description:
+        required: true
+        description: Description of the component in the generated component definition
+      filter_by_profile:
+        required: false
+        description: Filter the component definition control by a separate profile
+
+jobs:
+  create-component:
+    name: Create component definition
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate app token
+        uses: tibdex/github-app-token@v2.1.0
+        id: get_installation_token
+        with: 
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          permissions: >-
+            {"contents": "write", "pull_requests": "write"}
+      - name: Clone
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.get_installation_token.outputs.token }}
+      - name: Create new component definition
+        id: create-cd
+        uses: RedHatProductSecurity/trestle-bot/actions/create-cd@v0.7.1
+        with:
+          markdown_path: "md_comp"
+          profile_name: ${{ github.event.inputs.import_name }}
+          component_definition_name: ${{ github.event.inputs.output }}
+          component_title: ${{ github.event.inputs.component_name }}
+          component_description: ${{ github.event.inputs.component_description }}
+          file_pattern: "*.json,rules/*,markdown/*"
+          branch: component-create-${{ github.run_id }}
+          target_branch: "develop"
+          commit_message: "adds ${{ github.event.inputs.component_name }} component to ${{ github.event.inputs.output }} component definition [skip ci]"
+          pull_request_title: "Add ${{ github.event.inputs.component_name }} component to ${{ github.event.inputs.output }} component definition"
+          github_token: ${{ steps.get_installation_token.outputs.token }}
+          filter_by_profile: ${{ github.event.inputs.filter_by_profile }}
