@@ -22,7 +22,7 @@ jobs:
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'jpower432',
-              repo: 'trestelbot-demo-ssp',
+              repo: 'trestlebot-demo-ssp',
               workflow_id: 'update-cd.yml',
               ref: 'main'
             })
