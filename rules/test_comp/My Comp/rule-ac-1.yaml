@@ -4,7 +4,7 @@ x-trestle-component-info:
   type: service
 x-trestle-rule-info:
   description: Rule for ac-1
-  name: rule-ac-1
+  name: rule-ac-1 extra
   profile:
     description: Example
     href: trestle://profiles/example/profile.json
