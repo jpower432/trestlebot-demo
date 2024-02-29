@@ -90,6 +90,8 @@ ______________________________________________________________________
 
 <!-- Add control implementation description here for control: ac-1 -->
 
+This is an example response.
+
 ### Rules:
 
   - rule-ac-1
