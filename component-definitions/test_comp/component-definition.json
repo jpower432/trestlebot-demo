@@ -3,7 +3,7 @@
     "uuid": "49408c21-6dcb-44cf-a7d6-e4bd9026f981",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-02-29T18:39:18+00:00",
+      "last-modified": "2024-02-29T18:47:29.081844+00:00",
       "version": "1.0",
       "oscal-version": "1.0.4"
     },
@@ -78,6 +78,10 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-sc-1"
+                  },
+                  {
+                    "name": "implementation-status",
+                    "value": "planned"
                   }
                 ]
               },
@@ -90,6 +94,10 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-ac-2"
+                  },
+                  {
+                    "name": "implementation-status",
+                    "value": "planned"
                   }
                 ]
               },
@@ -102,18 +110,26 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-ac-4.4"
+                  },
+                  {
+                    "name": "implementation-status",
+                    "value": "planned"
                   }
                 ]
               },
               {
                 "uuid": "505d23dc-4aad-40e1-95ea-9b1ee40486f9",
                 "control-id": "ac-1",
-                "description": "",
+                "description": "This is an example response.",
                 "props": [
                   {
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-ac-1"
+                  },
+                  {
+                    "name": "implementation-status",
+                    "value": "planned"
                   }
                 ]
               }
