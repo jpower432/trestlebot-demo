@@ -24,6 +24,9 @@ jobs:
               owner: 'jpower432',
               repo: 'trestlebot-demo-ssp',
               workflow_id: 'update-cd.yml',
-              ref: 'main'
+              ref: 'main',
+              inputs: {
+                ref: ${{ github.event.release.tag_name }}
+              },
             })
         
