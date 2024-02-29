@@ -26,7 +26,7 @@ jobs:
               workflow_id: 'update-cd.yml',
               ref: 'main',
               inputs: {
-                ref: ${{ github.event.release.tag_name }}
+                ref: '${{ github.event.release.tag_name }}'
               },
             })
         
