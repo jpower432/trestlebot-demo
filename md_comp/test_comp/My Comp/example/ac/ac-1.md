@@ -88,7 +88,7 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-MY example response for ac-1/
+MY example response for ac-1.
 
 ### Rules:
 
