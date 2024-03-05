@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "374e3584-82c5-498b-9b82-5fdfb110ab5e",
+    "uuid": "632a4e75-59d0-4681-b923-f27ad49cf104",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-03-05T13:57:51+00:00",
+      "last-modified": "2024-03-05T16:59:07+00:00",
       "version": "1.0",
       "oscal-version": "1.0.4"
     },
     "components": [
       {
-        "uuid": "f09ed27f-25f3-4b99-a04b-731b01507b77",
+        "uuid": "f5571d21-3f79-4487-bdc8-a377c07f776b",
         "type": "service",
         "title": "My Comp",
         "description": "My testing comp",
@@ -65,12 +65,12 @@
         ],
         "control-implementations": [
           {
-            "uuid": "ff660703-38da-410d-a4c8-1f62517d26a4",
+            "uuid": "2a0235ca-1cbd-4fc9-9466-fa54f8a7f5ce",
             "source": "trestle://profiles/example/profile.json",
             "description": "Example",
             "implemented-requirements": [
               {
-                "uuid": "2c0f0d99-1e45-436e-875e-45c872248dea",
+                "uuid": "25a4d115-a324-479c-8782-afa09c3445a3",
                 "control-id": "sc-1",
                 "description": "",
                 "props": [
@@ -82,7 +82,7 @@
                 ]
               },
               {
-                "uuid": "1d018494-5f28-47ac-9a7e-076f0f71060d",
+                "uuid": "3967bfb2-1186-429c-9f6b-618d13ac23f4",
                 "control-id": "ac-2",
                 "description": "",
                 "props": [
@@ -94,7 +94,7 @@
                 ]
               },
               {
-                "uuid": "01087408-055f-451a-b72c-cce6fc35a06a",
+                "uuid": "2bd5141c-4b93-4cb5-bfbf-ac7cdab18049",
                 "control-id": "ac-4.4",
                 "description": "",
                 "props": [
@@ -106,7 +106,7 @@
                 ]
               },
               {
-                "uuid": "c6551762-3e8c-42c0-bc80-6f24dd9a8108",
+                "uuid": "d9975910-edfc-48eb-8e15-58a8d492113f",
                 "control-id": "ac-1",
                 "description": "",
                 "props": [
@@ -119,7 +119,7 @@
                 "statements": [
                   {
                     "statement-id": "ac-1_smt.a",
-                    "uuid": "0b589592-1345-4156-b360-b235c77522e0",
+                    "uuid": "a2ba95f1-663e-4162-8a83-d1a6a1fee455",
                     "description": "",
                     "props": [
                       {
