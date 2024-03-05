@@ -38,7 +38,7 @@ jobs:
       - name: Transform
         if: steps.changes.outputs.rules == 'true'
         id: transform
-        uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@v0.7.1
+        uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@main
         with:
           commit_message: "Auto-transform rules content [skip ci]"
   

@@ -9,4 +9,5 @@ x-trestle-rule-info:
     description: Example
     href: trestle://profiles/example/profile.json
     include-controls:
+    - id: ac-1
     - id: ac-1_smt.a
