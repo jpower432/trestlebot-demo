@@ -10,4 +10,3 @@ x-trestle-rule-info:
     href: trestle://profiles/example/profile.json
     include-controls:
     - id: ac-2
-    - id: ac-2.11
