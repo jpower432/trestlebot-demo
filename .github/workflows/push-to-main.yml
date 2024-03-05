@@ -69,6 +69,7 @@ jobs:
       - name: Clone
         uses: actions/checkout@v4
         with:
+          ref: main
           token: ${{ steps.get_installation_token.outputs.token }}
       - name: AutoSync
         id: autosync
