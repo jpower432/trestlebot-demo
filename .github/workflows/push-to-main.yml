@@ -53,29 +53,29 @@ jobs:
           commit_message: "Regenerate markdown content [skip ci]"
           skip_assemble: true
     
-    autosync:
-        name: Automatically Sync Content
-        needs: transform-and-regenerate
-        runs-on: ubuntu-latest
-        steps:
-          - name: Generate app token
-            uses: tibdex/github-app-token@v2.1.0
-            id: get_installation_token
-            with: 
-              app_id: ${{ secrets.APP_ID }}
-              private_key: ${{ secrets.PRIVATE_KEY }}
-              permissions: >-
-                {"contents": "write"}
-          - name: Clone
-            uses: actions/checkout@v4
-            with:
-              token: ${{ steps.get_installation_token.outputs.token }}
-          - name: AutoSync
-            id: autosync
-            uses: RedHatProductSecurity/trestle-bot/actions/autosync@v0.7.2
-            with:
-              markdown_path: "md_comp"
-              oscal_model: "compdef"
-              commit_message: "Autosync component definition content [skip ci]"
+  autosync:
+    name: Automatically Sync Content
+    needs: transform-and-regenerate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate app token
+        uses: tibdex/github-app-token@v2.1.0
+        id: get_installation_token
+        with: 
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          permissions: >-
+            {"contents": "write"}
+      - name: Clone
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.get_installation_token.outputs.token }}
+      - name: AutoSync
+        id: autosync
+        uses: RedHatProductSecurity/trestle-bot/actions/autosync@v0.7.2
+        with:
+          markdown_path: "md_comp"
+          oscal_model: "compdef"
+          commit_message: "Autosync component definition content [skip ci]"
       
       
