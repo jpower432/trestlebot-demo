@@ -88,7 +88,23 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-This is an example response.
+<!-- Add control implementation description here for control: ac-1 -->
+
+MY example response for ac-1/
+
+### Rules:
+
+  - rule-ac-1
+
+### Implementation Status: planned
+
+______________________________________________________________________
+
+## Implementation for part a.
+
+<!-- Add control implementation description here for item a. -->
+
+My example responses for ac-1 part a.
 
 ### Rules:
 
