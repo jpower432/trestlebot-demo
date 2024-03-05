@@ -135,6 +135,14 @@ ______________________________________________________________________
 
 <!-- Add control implementation description here for control: ac-2 -->
 
+<!-- Please leave this section blank and enter implementation details in the parts below. -->
+
+______________________________________________________________________
+
+## Implementation for part d.
+
+<!-- Add control implementation description here for item d. -->
+
 ### Rules:
 
   - rule-ac-2
