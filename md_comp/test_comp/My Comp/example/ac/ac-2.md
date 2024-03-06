@@ -135,7 +135,8 @@ ______________________________________________________________________
 
 <!-- Add control implementation description here for control: ac-2 -->
 
-### Implementation Status: operational
+My implementation description for ac-2.
+### Implementation Status: implemented
 
 ______________________________________________________________________
 
@@ -143,10 +144,12 @@ ______________________________________________________________________
 
 <!-- Add control implementation description here for item d. -->
 
+My implementation description for ac-2 part d.
+
 ### Rules:
 
   - rule-ac-2
 
-### Implementation Status: planned
+### Implementation Status: implemented
 
 ______________________________________________________________________
