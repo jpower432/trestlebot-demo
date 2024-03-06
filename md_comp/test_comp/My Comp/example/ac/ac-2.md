@@ -133,16 +133,13 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-<!-- Add control implementation description here for control: ac-2 -->
-
 My implementation description for ac-2.
+
 ### Implementation Status: implemented
 
 ______________________________________________________________________
 
 ## Implementation for part d.
-
-<!-- Add control implementation description here for item d. -->
 
 My implementation description for ac-2 part d.
 

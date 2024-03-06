@@ -3,7 +3,7 @@
     "uuid": "7386f0c8-eeb9-443a-bf28-f0e706331bf8",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-03-05T20:31:20.171789+00:00",
+      "last-modified": "2024-03-06T21:49:36.157018+00:00",
       "version": "1.0",
       "oscal-version": "1.0.4"
     },
@@ -99,7 +99,7 @@
                   {
                     "statement-id": "ac-2_smt.d",
                     "uuid": "cff63470-cb90-4262-baf3-071dba3068e9",
-                    "description": "",
+                    "description": "My implementation description for ac-2 part d.",
                     "props": [
                       {
                         "name": "Rule_Id",
@@ -108,7 +108,7 @@
                       },
                       {
                         "name": "implementation-status",
-                        "value": "planned"
+                        "value": "implemented"
                       }
                     ]
                   }
