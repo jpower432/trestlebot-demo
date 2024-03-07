@@ -3,7 +3,7 @@
     "uuid": "ba947c04-999e-4c15-80e0-4e747c671231",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-03-07T22:44:14.895526+00:00",
+      "last-modified": "2024-03-07T22:58:45.718915+00:00",
       "version": "0.0.8",
       "oscal-version": "1.0.4"
     },
@@ -133,7 +133,7 @@
               {
                 "uuid": "de07e92d-ab92-44b8-b19a-a6b4c20d2019",
                 "control-id": "sc-1",
-                "description": "",
+                "description": "This is the responses for sc-1",
                 "props": [
                   {
                     "name": "Rule_Id",
