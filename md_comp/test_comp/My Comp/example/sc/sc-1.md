@@ -90,6 +90,8 @@ ______________________________________________________________________
 
 <!-- Add control implementation description here for control: sc-1 -->
 
+This is the responses for sc-1
+
 ### Rules:
 
   - rule-sc-1
