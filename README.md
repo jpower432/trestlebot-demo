@@ -9,9 +9,10 @@ Testing and demonstrating trestlebot in various configurations for editing compo
 
 # What is missing
 
-- Component Definition automated versioning [update](https://github.com/RedHatProductSecurity/trestle-bot/issues/186).
 - The develop branch. This example uses GitHub flow to keep it more lightweight.
+- Rules CSV support
 
 # Ideas
 - An automated dry-run [option](https://github.com/RedHatProductSecurity/trestle-bot/issues/181). It may be generally useful to know if a markdown changes is going to cause assemble to fail before it merged.
-- Combine add markdown generation as part of the `rules-transform` task
+- Add markdown generation as part of the `rules-transform` task
+- Add markdownlint and yamllint PR [checks](https://github.com/RedHatProductSecurity/trestle-bot/issues/165)
