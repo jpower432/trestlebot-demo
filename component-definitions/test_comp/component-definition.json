@@ -3,7 +3,7 @@
     "uuid": "ee0f6f34-78ba-4170-baeb-3d217da79263",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-03-12T20:52:38+00:00",
+      "last-modified": "2024-03-12T20:53:43.245045+00:00",
       "version": "1.0",
       "oscal-version": "1.0.4"
     },
@@ -98,65 +98,59 @@
               {
                 "uuid": "ec55492a-85a6-4cae-b239-b859acb3ed6b",
                 "control-id": "sc-1",
-                "description": "",
+                "description": "This is the responses for sc-1",
                 "props": [
                   {
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-sc-1"
+                  },
+                  {
+                    "name": "implementation-status",
+                    "value": "planned"
                   }
                 ]
               },
               {
                 "uuid": "44f8b6d8-cc0c-47d9-9ac0-074ceace9e5c",
                 "control-id": "ac-2.2",
-                "description": "",
+                "description": "My implementation for ac-2.2",
                 "props": [
                   {
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-ac-2.2"
+                  },
+                  {
+                    "name": "implementation-status",
+                    "value": "planned"
                   }
                 ]
               },
               {
                 "uuid": "682f09dd-c71d-44e9-ba16-65b42f5d14eb",
                 "control-id": "ac-1",
-                "description": "",
+                "description": "MY example response for ac-1.",
+                "props": [
+                  {
+                    "name": "implementation-status",
+                    "value": "planned"
+                  }
+                ],
                 "statements": [
                   {
                     "statement-id": "ac-1_smt.a",
                     "uuid": "b06835ca-48d5-42b7-956a-a5bd2d0fd5d5",
-                    "description": "",
+                    "description": "My example responses for ac-1 part a.",
                     "props": [
                       {
                         "name": "Rule_Id",
                         "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                         "value": "rule-ac-1"
-                      }
-                    ]
-                  },
-                  {
-                    "statement-id": "ac-1_smt.b",
-                    "uuid": "281f5a10-1150-435b-b8fc-ef6f57f6fe42",
-                    "description": "",
-                    "props": [
+                      },
                       {
-                        "name": "Rule_Id",
-                        "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-                        "value": "rule-ac-1"
-                      }
-                    ]
-                  },
-                  {
-                    "statement-id": "ac-1_smt.c",
-                    "uuid": "3617bdf9-3592-461c-a768-42b24de5627e",
-                    "description": "",
-                    "props": [
-                      {
-                        "name": "Rule_Id",
-                        "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-                        "value": "rule-ac-1"
+                        "name": "implementation-status",
+                        "value": "planned"
                       }
                     ]
                   }
@@ -171,6 +165,10 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-ac-4.4"
+                  },
+                  {
+                    "name": "implementation-status",
+                    "value": "planned"
                   }
                 ]
               }
