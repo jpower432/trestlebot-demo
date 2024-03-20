@@ -24,7 +24,7 @@ jobs:
         with:
           token: ${{ steps.get_installation_token.outputs.token }}
       - name: Autosync
-        uses: RedHatProductSecurity/trestle-bot/actions/autosync@feat/model-versioning
+        uses: RedHatProductSecurity/trestle-bot/actions/autosync@main
         with:
           markdown_path: "md_comp"
           oscal_model: "compdef"
