@@ -3,7 +3,7 @@
     "uuid": "ee0f6f34-78ba-4170-baeb-3d217da79263",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-03-22T00:27:32.810749+00:00",
+      "last-modified": "2024-03-22T00:32:37.939212+00:00",
       "version": "0.0.11",
       "oscal-version": "1.0.4"
     },
@@ -114,7 +114,7 @@
               {
                 "uuid": "44f8b6d8-cc0c-47d9-9ac0-074ceace9e5c",
                 "control-id": "ac-2.2",
-                "description": "My implementation for ac-2.2",
+                "description": "My implementation for ac-2.2 with additional information",
                 "props": [
                   {
                     "name": "Rule_Id",
