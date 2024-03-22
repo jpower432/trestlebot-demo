@@ -35,7 +35,7 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-My implementation for ac-2.2
+My implementation for ac-2.2 with additional information
 
 ### Rules:
 
