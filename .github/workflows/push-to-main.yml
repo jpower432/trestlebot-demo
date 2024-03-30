@@ -54,7 +54,7 @@ jobs:
           token: ${{ steps.get_installation_token.outputs.token }}
       - name: AutoSync
         id: autosync
-        uses: RedHatProductSecurity/trestle-bot/actions/autosync@bug/default-version
+        uses: RedHatProductSecurity/trestle-bot/actions/autosync@feat/replace-check-only
         with:
           markdown_path: "md_comp"
           oscal_model: "compdef"

@@ -20,14 +20,14 @@ runs:
       - name: Transform
         if: steps.changes.outputs.rules == 'true'
         id: transform
-        uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@v0.8.0
+        uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@feat/replace-check-only
         with:
           commit_message: "Auto-transform rules [skip ci]"
           dry_run: =${{ inputs.dry-run }}
       - name: Regenerate
         if: steps.changes.outputs.rules == 'true'
         id: regenerate
-        uses: RedHatProductSecurity/trestle-bot/actions/autosync@v0.8.0
+        uses: RedHatProductSecurity/trestle-bot/actions/autosync@feat/replace-check-only
         with:
           markdown_path: "md_comp"
           oscal_model: "compdef"
