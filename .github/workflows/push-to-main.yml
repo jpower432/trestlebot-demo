@@ -31,27 +31,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ steps.get_installation_token.outputs.token }}
-      - uses: dorny/paths-filter@v3
-        id: changes
-        with:
-          filters: |
-            rules:
-              - 'rules/**'
-      - name: Transform
-        if: steps.changes.outputs.rules == 'true'
-        id: transform
-        uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@v0.8.0
-        with:
-          commit_message: "Auto-transform rules [skip ci]"
-      - name: Regenerate
-        if: steps.changes.outputs.rules == 'true'
-        id: regenerate
-        uses: RedHatProductSecurity/trestle-bot/actions/autosync@v0.8.0
-        with:
-          markdown_path: "md_comp"
-          oscal_model: "compdef"
-          commit_message: "Regenerate markdown content [skip ci]"
-          skip_assemble: true
+      - name: Transform rules
+        uses: ./.github/actions/transform-rules
     
   autosync:
     name: Automatically Sync Content
@@ -61,7 +42,7 @@ jobs:
       - name: Generate app token
         uses: tibdex/github-app-token@v2.1.0
         id: get_installation_token
-        with: 
+        with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
           permissions: >-
