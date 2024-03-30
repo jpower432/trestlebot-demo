@@ -23,7 +23,7 @@ runs:
         uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@feat/replace-check-only
         with:
           commit_message: "Auto-transform rules [skip ci]"
-          dry_run: =${{ inputs.dry-run }}
+          dry_run: ${{ inputs.dry-run }}
       - name: Regenerate
         if: steps.changes.outputs.rules == 'true'
         id: regenerate
