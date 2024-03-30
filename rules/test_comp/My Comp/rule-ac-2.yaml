@@ -1,7 +1,6 @@
 x-trestle-component-info:
   description: My testing comp
   name: My Comp
-  type: service
 x-trestle-rule-info:
   description: Rule for ac-2.2
   name: rule-ac-2.2
