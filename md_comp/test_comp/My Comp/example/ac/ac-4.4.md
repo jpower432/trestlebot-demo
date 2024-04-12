@@ -42,6 +42,8 @@ ______________________________________________________________________
 
 <!-- Add control implementation description here for control: ac-4.4 -->
 
+My example response for ac-4.4 for component My Comp.
+
 ### Rules:
 
   - rule-ac-4.4
