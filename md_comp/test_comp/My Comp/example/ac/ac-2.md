@@ -141,7 +141,7 @@ ______________________________________________________________________
 
 ## Implementation for part d.
 
-My implementation description for ac-2 part d.
+My implementation description for ac-2 part d with additional information.
 
 ### Rules:
 
