@@ -20,7 +20,7 @@ runs:
       - name: Transform
         if: steps.changes.outputs.rules == 'true'
         id: transform
-        uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@feat/replace-check-only
+        uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@refactor/rule-validations
         with:
           commit_message: "Auto-transform rules [skip ci]"
           dry_run: =${{ inputs.dry-run }}
