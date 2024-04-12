@@ -133,7 +133,7 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-My implementation description for ac-2.
+My implementation description for ac-2 with some additional information.
 
 ### Implementation Status: implemented
 
