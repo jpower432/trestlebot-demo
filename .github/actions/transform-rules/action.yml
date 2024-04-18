@@ -23,7 +23,7 @@ runs:
         uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@refactor/rule-validations
         with:
           commit_message: "Auto-transform rules [skip ci]"
-          dry_run: =${{ inputs.dry-run }}
+          dry_run: ${{ inputs.dry-run }}
       - name: Regenerate
         if: steps.changes.outputs.rules == 'true'
         id: regenerate
