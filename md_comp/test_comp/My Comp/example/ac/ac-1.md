@@ -116,7 +116,7 @@ MY example response for ac-1 with additional information.
 
   - rule-ac-1
 
-### Implementation Status: planned
+### Implementation Status: invalid
 
 ______________________________________________________________________
 
