@@ -35,12 +35,12 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-My implementation for ac-2.2 with additional information
+My implementation for ac-2.2 with additional information with even more information.
 
 ### Rules:
 
   - rule-ac-2.2
 
-### Implementation Status: planned
+### Implementation Status: partial
 
 ______________________________________________________________________
