@@ -18,6 +18,9 @@ on:
         required: false
         description: Filter the component definition control by a separate profile
 
+env:
+  env_vars: ${{ vars.TEST }}
+
 jobs:
   create-component:
     name: Create component definition
@@ -35,18 +38,5 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ steps.get_installation_token.outputs.token }}
-      - name: Create new component definition
-        id: create-cd
-        uses: RedHatProductSecurity/trestle-bot/actions/create-cd@v0.8.1
-        with:
-          markdown_path: "md_comp"
-          profile_name: ${{ github.event.inputs.import_name }}
-          component_definition_name: ${{ github.event.inputs.output }}
-          component_title: ${{ github.event.inputs.component_name }}
-          component_description: ${{ github.event.inputs.component_description }}
-          branch: component-create-${{ github.run_id }}
-          target_branch: "main"
-          commit_message: "adds ${{ github.event.inputs.component_name }} component to ${{ github.event.inputs.output }} component definition [skip ci]"
-          pull_request_title: "Add ${{ github.event.inputs.component_name }} component to ${{ github.event.inputs.output }} component definition"
-          github_token: ${{ steps.get_installation_token.outputs.token }}
-          filter_by_profile: ${{ github.event.inputs.filter_by_profile }}
+      - name: Test vars
+        run: make test
