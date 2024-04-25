@@ -5,15 +5,8 @@ x-trestle-component-info:
 x-trestle-rule-info:
   description: Rule for ac-1
   name: rule-ac-1
-  parameter:
-    name: prm_1
-    description: prm_1 description
-    alternative-values: {'default': '20%', '5pc': '5%', '10pc': '10%', '15pc': '15%', '20pc': '20%'}
-    default-value: '20%'
   profile:
     description: Example
     href: trestle://profiles/example/profile.json
     include-controls:
-    - id: ac-1_smt.a
-    - id: ac-1_smt.b
-    - id: ac-1_smt.c
+    - id: ac-1
