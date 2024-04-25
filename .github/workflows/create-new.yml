@@ -19,7 +19,7 @@ on:
         description: Filter the component definition control by a separate profile
 
 env:
-  env_vars: ${{ vars.TEST }}
+  TEST: ${{ vars.TEST }}
 
 jobs:
   create-component:
