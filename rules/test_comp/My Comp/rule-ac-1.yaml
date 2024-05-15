@@ -12,7 +12,7 @@ x-trestle-rule-info:
     default-value: '20%'
   profile:
     description: Example
-    href: trestle://profiles/fedramo_rev5_high/profile.json
+    href: trestle://profiles/fedramp_rev5_high/profile.json
     include-controls:
     - id: ac-1_smt.a
     - id: ac-1_smt.b
