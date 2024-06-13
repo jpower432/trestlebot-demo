@@ -13,7 +13,8 @@
         "include-controls": [
           {
             "with-ids": [
-              "ac-2.5"
+              "ac-2.5",
+              "ac-11"
             ]
           }
         ]
@@ -29,6 +30,9 @@
       "set-parameters": [
         {
           "param-id": "ac-02.05_odp"
+        },
+        {
+          "param-id": "ac-11_odp.01"
         }
       ],
       "alters": []
