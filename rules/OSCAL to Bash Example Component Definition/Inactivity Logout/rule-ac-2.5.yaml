@@ -1,0 +1,15 @@
+x-trestle-component-info:
+  description: Inactivity logout is behavior or policy-based and requires users to
+    take physical action to log out when they are expecting inactivity longer than
+    the defined period.
+  name: Inactivity Logout
+  type: service
+x-trestle-rule-info:
+  description: Rule for ac-2.5
+  name: rule-ac-2.5
+  profile:
+    description: Example Using NIST SP 800-53 Rev 5 Controls and SP 800-53A Rev 5
+      Assessment Procedures
+    href: trestle://profiles/oscal_to_bash_example/profile.json
+    include-controls:
+    - id: ac-2.5
