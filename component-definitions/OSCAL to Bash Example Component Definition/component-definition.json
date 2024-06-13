@@ -1,0 +1,78 @@
+{
+  "component-definition": {
+    "uuid": "1c876028-58f0-4cb4-9b2c-daa7c6230afd",
+    "metadata": {
+      "title": "Component definition for OSCAL to Bash Example Component Definition",
+      "last-modified": "2024-06-13T20:26:12+00:00",
+      "version": "1.0",
+      "oscal-version": "1.0.4"
+    },
+    "components": [
+      {
+        "uuid": "bbfe22c3-4a9f-424f-a989-0c36914523da",
+        "type": "service",
+        "title": "Inactivity Logout",
+        "description": "Inactivity logout is behavior or policy-based and requires users to take physical action to log out when they are expecting inactivity longer than the defined period.",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+            "value": "rule-ac-2.5",
+            "remarks": "rule_set_0"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+            "value": "Rule for ac-2.5",
+            "remarks": "rule_set_0"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+            "value": "rule-ac-11",
+            "remarks": "rule_set_1"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+            "value": "Rule for ac-11",
+            "remarks": "rule_set_1"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "07f6390f-dc19-4f07-a3ec-80bc56aa90a4",
+            "source": "trestle://profiles/oscal_to_bash_example/profile.json",
+            "description": "Example Using NIST SP 800-53 Rev 5 Controls and SP 800-53A Rev 5 Assessment Procedures",
+            "implemented-requirements": [
+              {
+                "uuid": "2e6a0e1a-10fe-4d4b-bfd7-404dbb9d0035",
+                "control-id": "ac-2.5",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+                    "value": "rule-ac-2.5"
+                  }
+                ]
+              },
+              {
+                "uuid": "55607158-ff8c-447e-8275-3eac35b5e1e0",
+                "control-id": "ac-11",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+                    "value": "rule-ac-11"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
