@@ -10,19 +10,15 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
-      - name: Generate app token
-        uses: tibdex/github-app-token@v2.1.0
-        id: get_installation_token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.PRIVATE_KEY }}
-          permissions: >-
-            {"contents": "write"}
+
       - name: Clone
         uses: actions/checkout@v4
         with:
-          token: ${{ steps.get_installation_token.outputs.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Autosync
         uses: RedHatProductSecurity/trestle-bot/actions/autosync@main
         with:
@@ -39,7 +35,7 @@ jobs:
       - name: Create Release
         uses: actions/github-script@v7
         with:
-          github-token: ${{ steps.get_installation_token.outputs.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             await github.rest.repos.createRelease({
               owner: context.repo.owner,
