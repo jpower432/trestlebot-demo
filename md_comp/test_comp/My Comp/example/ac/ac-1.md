@@ -128,6 +128,6 @@ My example responses for ac-1 part a for My Comp
 
   - rule-ac-1
 
-### Implementation Status: planned
+### Implementation Status: partial
 
 ______________________________________________________________________
