@@ -21,14 +21,24 @@ jobs:
     steps:
       - name: Clone
         uses: actions/checkout@v4
-      - name: Transform rules
-        uses: ./.github/actions/transform-rules
-        with:
-          dry-run: true
       - name: AutoSync
         id: autosync
         uses: RedHatProductSecurity/trestle-bot/actions/autosync@main
         with:
           markdown_path: "md_comp"
           oscal_model: "compdef"
+          dry_run: true
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            rules:
+              - 'rules/**'
+      - name: Transform
+        if: steps.changes.outputs.rules == 'true'
+        id: transform
+        uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@feat/markdown-generation-transform
+        with:
+          markdown_path: "md_comp"
+          commit_message: "Auto-transform rules [skip ci]"
           dry_run: true
