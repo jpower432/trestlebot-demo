@@ -15,28 +15,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  transform-and-regenerate:
-    name: Rules Transform and Content Syncing
-    runs-on: ubuntu-latest
-    steps:
-      - name: Generate app token
-        uses: tibdex/github-app-token@v2.1.0
-        id: get_installation_token
-        with: 
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.PRIVATE_KEY }}
-          permissions: >-
-            {"contents": "write"}
-      - name: Clone
-        uses: actions/checkout@v4
-        with:
-          token: ${{ steps.get_installation_token.outputs.token }}
-      - name: Transform rules
-        uses: ./.github/actions/transform-rules
-    
-  autosync:
+  transform-and-sync:
     name: Automatically Sync Content
-    needs: transform-and-regenerate
     runs-on: ubuntu-latest
     steps:
       - name: Generate app token
@@ -50,7 +30,6 @@ jobs:
       - name: Clone
         uses: actions/checkout@v4
         with:
-          ref: main
           token: ${{ steps.get_installation_token.outputs.token }}
       - name: AutoSync
         id: autosync
@@ -59,5 +38,18 @@ jobs:
           markdown_path: "md_comp"
           oscal_model: "compdef"
           commit_message: "Autosync component definition content [skip ci]"
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            rules:
+              - 'rules/**'
+      - name: Transform
+        if: steps.changes.outputs.rules == 'true'
+        id: transform
+        uses: RedHatProductSecurity/trestle-bot/actions/rules-transform@feat/markdown-generation-transform
+        with:
+          markdown_path: "md_comp"
+          commit_message: "Auto-transform rules [skip ci]" 
       
       
