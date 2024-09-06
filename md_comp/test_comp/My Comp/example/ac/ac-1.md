@@ -122,7 +122,7 @@ ______________________________________________________________________
 
 ## Implementation for part a.
 
-My example responses for ac-1 part a for My Comp
+My example responses for ac-1 part a for My Comp with some additional information.
 
 ### Rules:
 
