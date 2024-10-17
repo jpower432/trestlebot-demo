@@ -88,7 +88,7 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-This is the responses for sc-1
+This is the responses for sc-1. More information.
 
 ### Rules:
 
