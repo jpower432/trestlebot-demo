@@ -7,7 +7,7 @@ x-trestle-rule-info:
   name: rule-ac-2.2
   parameter:
     name: prm_1
-    description: prm_1 description
+    description: prm_1 description again
     alternative-values:
       default: '20%'
       5pc: '5%'
